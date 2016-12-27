@@ -1,0 +1,19 @@
+{
+	"name": "zz.home",
+	"version": "20161227.0.0",
+	"description": "Imazzine Project home page.",
+	"author": {
+		"name": "Artem Lytvynov <buntarb@gmail.com>",
+		"email": "buntarb@gmail.com"
+	},
+	"license": "Apache-2.0",
+    "homepage": "http://www.example.com",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/buntarb/zz.home.git"
+	},
+	"dependencies": {
+
+	    "imazzine-developer-kit": ""
+	}
+}
