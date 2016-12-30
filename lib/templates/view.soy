@@ -1,0 +1,49 @@
+{namespace zz.home.templates.view}
+
+/**
+ * View dataset template.
+ * @param uid
+ */
+{template .dataset}
+    <div
+        class="{css zz-home-view}"
+        data-set="{$uid}">
+    </div>
+{/template}
+
+/**
+ * View datarow template.
+ * @param uid
+ */
+{template .datarow}
+    <div
+        data-row="{$uid}">
+    </div>
+{/template}
+
+/**
+ * View model template.
+ */
+{template .model}
+    <div>
+        <div class="{css demo-card-wide} {css mdl-card} {css mdl-shadow--2dp}">
+          <div class="{css mdl-card__title}">
+            <h2 class="{css mdl-card__title-text}">Welcome</h2>
+          </div>
+          <div class="{css mdl-card__supporting-text}">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Mauris sagittis pellentesque lacus eleifend lacinia...
+          </div>
+          <div class="{css mdl-card__actions} {css mdl-card--border}">
+            <a class="{css mdl-button} {css mdl-button--colored} {css mdl-js-button} {css mdl-js-ripple-effect}">
+              Get Started
+            </a>
+          </div>
+          <div class="{css mdl-card__menu}">
+            <button class="{css mdl-button} {css mdl-button--icon} {css mdl-js-button} {css mdl-js-ripple-effect}">
+              <i class="{css material-icons}">share</i>
+            </button>
+          </div>
+        </div>
+    </div>
+{/template}

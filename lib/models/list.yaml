@@ -14,7 +14,7 @@ FIELDS:
     type: zz.models.enums.FieldType.STRING
     required: false
 
-  class:
+  cssClass:
 
     index: 2
     type: zz.models.enums.FieldType.STRING

@@ -1,0 +1,9 @@
+NAMESPACE: 'zz.home.models.View'
+
+FIELDS:
+
+  name:
+
+    index: 0
+    type: zz.models.enums.FieldType.STRING
+    required: false

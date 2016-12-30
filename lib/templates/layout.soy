@@ -32,8 +32,8 @@
     <div
         class="
             {css model}
-            {if $value.class.length}
-                {sp}{$value.class}
+            {if $value.cssClass.length}
+                {sp}{$value.cssClass}
             {/if}"
         data-class="{$key.disable}:{css disable}">
         
@@ -42,25 +42,25 @@
             class="{css mdl-layout} {css mdl-js-layout} {css mdl-layout--fixed-header}">
             // Header
             <header
-                class="mdl-layout__header">
+                class="{css mdl-layout__header}">
                 <div
-                    class="mdl-layout__header-row">
+                    class="{css mdl-layout__header-row}">
                     // Logo/Menu
                     <div
                         data-action
                         role="button"
                         tabindex="0"
-                        class="mdl-layout__drawer-button">
+                        class="{css mdl-layout__drawer-button}">
                     </div>
                     // Title
                     <span
                         data-model="{$key.title}"
-                        class="mdl-layout-title">
+                        class="{css mdl-layout-title}">
                         {$value.title}
                     </span>
                     // Add spacer, to align navigation to the right
                     <div
-                        class="mdl-layout-spacer">
+                        class="{css mdl-layout-spacer}">
                     </div>
                     // Navigation
                     <div
@@ -68,80 +68,47 @@
                         data-view="zz-home-navigation-list"
                         data-controller="zz-ui-list">
                     </div>
-                    // <nav
-                    //     class="mdl-navigation">
-                    //     <a
-                    //         class="mdl-navigation__link home"
-                    //         href="/#/">
-                    //         <span>Home</span>
-                    //     </a>
-                    //     <a
-                    //         class="mdl-navigation__link tutorial"
-                    //         href="/#/tutorial">
-                    //         Tutorial
-                    //     </a>
-                    //     <a
-                    //         class="mdl-navigation__link guide"
-                    //         href="/#/guide">
-                    //         Developer guide
-                    //     </a>
-                    //     <a
-                    //         target="blank_"
-                    //         class="mdl-navigation__link reference"
-                    //         href="https://google.github.io/closure-library/api/index.html">
-                    //         Reference API
-                    //     </a>
-                    // </nav>
                 </div>
             </header>
             // Vertical menu
             <div
                 data-class="{$key.menuOpened}:{css is-visible}"
-                class="mdl-layout__drawer">
+                class="{css mdl-layout__drawer}">
                 <span
-                    class="mdl-layout-title">
+                    class="{css mdl-layout-title}">
                     <div
-                        class="logo">
+                        class="{css logo}">
                     </div>
                     <div
-                        class="authors">
-                        <div class="caption">@authors</div>
-                        <div>Artem Lytvynov</div>
-                        <div>Igor Zynchenko</div>
-                        <div>Alex Popkov</div>
+                        class="{css title}">
+                        <div
+                            data-model="{$key.menuTitle}">
+                            {$value.menuTitle}
+                        </div>
                     </div>
                 </span>
                 <div
-                    class="devider">
+                    class="{css devider}">
                 </div>
-                <div>
-                    <div>
-                        <div
-                            class="mdl-navigation">
-                            <div
-                                class="mdl-navigation__link">
-                                Link
-                            </div>
-                        </div>
-                    </div>
+                <div
+                    data-model="{$key.menu}"
+                    data-view="zz-home-menu-list"
+                    data-controller="zz-ui-list">
                 </div>
-                
             </div>
             // View
             <main
-                class="mdl-layout__content">
+                class="{css mdl-layout__content}">
                 <div
-                    class="page-content">
-                    <div
-                        id="{css view-wrapper}">
-                    </div>
+                    id="{css view-wrapper}"
+                    class="{css page-content}">
                 </div>
             </main>
             // Obfuscator
             <div
                 data-action
                 data-class="{$key.menuOpened}:{css is-visible}"
-                class="mdl-layout__obfuscator">
+                class="{css mdl-layout__obfuscator}">
             </div>
         </div>
     </div>
