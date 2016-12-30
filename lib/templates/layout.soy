@@ -1,0 +1,148 @@
+{namespace zz.home.templates.layout}
+
+/**
+ * Layout dataset template.
+ * @param uid
+ */
+{template .dataset}
+    <div
+        role="main"
+        class="{css dataset} {css zz-home-layout}"
+        data-set="{$uid}">
+    </div>
+{/template}
+
+/**
+ * Layout datarow template.
+ * @param uid
+ */
+{template .datarow}
+    <div
+        class="{css datarow}"
+        data-row="{$uid}">
+    </div>
+{/template}
+
+/**
+ * Layout model template.
+ * @param key
+ * @param value
+ */
+{template .model}
+    <div
+        class="
+            {css model}
+            {if $value.class.length}
+                {sp}{$value.class}
+            {/if}"
+        data-class="{$key.disable}:{css disable}">
+        
+        // Material design layout
+        <div
+            class="{css mdl-layout} {css mdl-js-layout} {css mdl-layout--fixed-header}">
+            // Header
+            <header
+                class="mdl-layout__header">
+                <div
+                    class="mdl-layout__header-row">
+                    // Logo/Menu
+                    <div
+                        data-action
+                        role="button"
+                        tabindex="0"
+                        class="mdl-layout__drawer-button">
+                    </div>
+                    // Title
+                    <span
+                        data-model="{$key.title}"
+                        class="mdl-layout-title">
+                        {$value.title}
+                    </span>
+                    // Add spacer, to align navigation to the right
+                    <div
+                        class="mdl-layout-spacer">
+                    </div>
+                    // Navigation
+                    <div
+                        data-model="{$key.navigation}"
+                        data-view="zz-home-navigation-list"
+                        data-controller="zz-ui-list">
+                    </div>
+                    // <nav
+                    //     class="mdl-navigation">
+                    //     <a
+                    //         class="mdl-navigation__link home"
+                    //         href="/#/">
+                    //         <span>Home</span>
+                    //     </a>
+                    //     <a
+                    //         class="mdl-navigation__link tutorial"
+                    //         href="/#/tutorial">
+                    //         Tutorial
+                    //     </a>
+                    //     <a
+                    //         class="mdl-navigation__link guide"
+                    //         href="/#/guide">
+                    //         Developer guide
+                    //     </a>
+                    //     <a
+                    //         target="blank_"
+                    //         class="mdl-navigation__link reference"
+                    //         href="https://google.github.io/closure-library/api/index.html">
+                    //         Reference API
+                    //     </a>
+                    // </nav>
+                </div>
+            </header>
+            // Vertical menu
+            <div
+                data-class="{$key.menuOpened}:{css is-visible}"
+                class="mdl-layout__drawer">
+                <span
+                    class="mdl-layout-title">
+                    <div
+                        class="logo">
+                    </div>
+                    <div
+                        class="authors">
+                        <div class="caption">@authors</div>
+                        <div>Artem Lytvynov</div>
+                        <div>Igor Zynchenko</div>
+                        <div>Alex Popkov</div>
+                    </div>
+                </span>
+                <div
+                    class="devider">
+                </div>
+                <div>
+                    <div>
+                        <div
+                            class="mdl-navigation">
+                            <div
+                                class="mdl-navigation__link">
+                                Link
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            // View
+            <main
+                class="mdl-layout__content">
+                <div
+                    class="page-content">
+                    <div
+                        id="{css view-wrapper}">
+                    </div>
+                </div>
+            </main>
+            // Obfuscator
+            <div
+                data-action
+                data-class="{$key.menuOpened}:{css is-visible}"
+                class="mdl-layout__obfuscator">
+            </div>
+        </div>
+    </div>
+{/template}

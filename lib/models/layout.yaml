@@ -1,0 +1,54 @@
+NAMESPACE: 'zz.home.models.Layout'  
+
+REQUIRE:
+    - 'zz.ui.models.List'
+
+FIELDS:
+
+  class:
+
+    index: 0
+    type: zz.models.enums.FieldType.STRING
+    required: false
+
+  icon:
+
+    index: 1
+    type: zz.models.enums.FieldType.STRING
+    required: false
+
+  title:
+
+    index: 2
+    type: zz.models.enums.FieldType.STRING
+    required: false
+
+  disable:
+
+    index: 3
+    type: zz.models.enums.FieldType.BOOLEAN
+    required: false
+
+  navigation:
+
+    index: 4
+    type: zz.ui.models.List
+    required: false
+
+  menu:
+
+    index: 5
+    type: zz.ui.models.List
+    required: false
+    
+  menuOpened:
+    
+    index: 6
+    type: zz.models.enums.FieldType.BOOLEAN
+    required: false
+    
+  headerShown:
+    
+    index: 7
+    type: zz.models.enums.FieldType.BOOLEAN
+    required: false

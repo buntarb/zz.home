@@ -1,0 +1,102 @@
+.zz-ui-list{
+    
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .item{
+        
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+        white-space: nowrap;
+        overflow: hidden;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        .model{
+            
+            display: table;
+            position: relative;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            .icon,
+            .caption{
+                
+                display: table-cell;
+                position: relative;
+                vertical-align: middle;
+                font-family: 'Open Sanse';
+            }
+            .icon{
+                
+                &.iconExample{
+                    
+                    width: 40px;
+                    font-family: 'Open Sans';
+                    font-size: 13px;
+                    color: rgb(97, 97, 97);
+                    &::after{
+                        
+                        display: inline-block;
+                        position: static;
+                        text-align: center;
+                        content: "$";
+                        width: 100%;
+                    }
+                }
+            }
+            .caption{
+                
+                font-family: 'Open Sans';
+                font-size: 13px;
+                color: rgb(97, 97, 97);
+            }
+            &:hover{
+                
+                cursor: pointer;
+                background-color: rgba(0,0,0,.03);
+            }
+            &.active{
+                
+                background-color: rgba(0,0,0,0.1);
+                .icon{
+                    
+                    color: #212121;
+                }
+                .caption{
+                    
+                    color: #212121;
+                    font-family: 'Open Sans Bold';
+                }
+            }
+            &.disable{
+                
+                cursor: default;
+                background-color: rgba(0,0,0,0.05);
+                .icon{
+                    
+                    color: rgba(33, 33, 33, 0.5);
+                }
+                .caption{
+                    
+                    color: rgba(33, 33, 33, 0.5);
+                    font-family: 'Open Sans';
+                }
+            }
+        }
+    }
+    &.vertical {
+    
+        .item{
+            
+            float: left;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{namespace zz.home.templates.application}
+
+/**
+ * Application dataset template.
+ * @param uid
+ */
+{template .dataset}
+    <div
+        role="application"
+        class="{css zz-home-application}"
+        data-set="{$uid}">
+    </div>
+{/template}
+
+/**
+ * Application datarow template.
+ * @param uid
+ */
+{template .datarow}
+    <div
+        data-row="{$uid}">
+    </div>
+{/template}
+
+/**
+ * Application model template.
+ */
+{template .model}
+    <div
+        id="{css layout-wrapper}">
+    </div>
+{/template}
