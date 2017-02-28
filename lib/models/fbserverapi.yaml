@@ -1,0 +1,15 @@
+NAMESPACE: 'zz.home.models.FBServerApi'
+
+FIELDS:
+
+  stderr:
+
+    index: 0
+    type: zz.models.enums.FieldType.STRING
+    required: false
+
+  isrunning:
+
+    index: 1
+    type: zz.models.enums.FieldType.BOOLEAN
+    required: false

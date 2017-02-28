@@ -99,3 +99,11 @@ IDE:
 
   #WSServer path
   WS_SERVER_PATH: ''
+
+FB:
+
+  # Server domain/IP
+  SERVER_DOMAIN: 'localhost'
+
+  # Server port
+  SERVER_PORT: 8886

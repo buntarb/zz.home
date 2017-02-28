@@ -1,0 +1,19 @@
+{namespace zz.home.templates.posts}
+
+/**
+ * Posts model template.
+ * @param key
+ * @param value
+ */
+{template .model}
+    <div>
+        <div
+            class="{css demo-card-wide} {css mdl-card} {css mdl-shadow--2dp}">
+          <div
+            class="{css mdl-card__supporting-text}"
+            data-model={$key.content}>
+            {$value.content}
+          </div>
+        </div>
+    </div>
+{/template}
