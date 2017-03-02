@@ -71,7 +71,7 @@ SERVER:
 COMPILATION:
 
   # Default locale
-  LOCALE: 'en'
+  LOCALE: 'ru'
 
   # Compilation level
   COMPILE_LEVEL: 'ADVANCED_OPTIMIZATIONS'
