@@ -1,0 +1,9 @@
+NAMESPACE: 'zz.home.models.Posts'
+
+FIELDS:
+
+  content:
+
+    index: 0
+    type: zz.models.enums.FieldType.STRING
+    required: false

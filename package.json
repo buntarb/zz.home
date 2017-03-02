@@ -16,6 +16,9 @@
 
 	    "imazzine-developer-kit": "",
 	    "imazzine-developer-lib": "",
-	    "zz.styles": ""
+	    "zz.styles": "",
+		"zz.net": "",
+		"zz.app": "",
+		"zz.environment": ""
 	}
 }
