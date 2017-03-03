@@ -2,8 +2,20 @@ NAMESPACE: 'zz.home.models.Posts'
 
 FIELDS:
 
-  content:
+  message:
 
     index: 0
+    type: zz.models.enums.FieldType.STRING
+    required: false
+
+  image:
+
+    index: 1
+    type: zz.models.enums.FieldType.STRING
+    required: false
+
+  video:
+
+    index: 2
     type: zz.models.enums.FieldType.STRING
     required: false
