@@ -12,11 +12,13 @@
             class="{css mdl-card__supporting-text}">
             {$value.message}
           </div>
-          <div
+          {if $value.image}
+            <div
               class="{css mdl-card__supporting-text}">
-              <img
-                src={$value.image} />
+                  <img
+                    src={$value.image} />
             </div>
+          {/if}
         </div>
     </div>
 {/template}
