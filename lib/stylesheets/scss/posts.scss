@@ -1,0 +1,40 @@
+div.post {
+
+  & div.post--title {
+
+    font-weight: 200;
+    line-height: 48px;
+    margin: 0 auto 12px;
+    position: relative;
+    word-wrap: break-word;
+  }
+  & div.post--message{
+
+    & h2 {
+
+      margin: 0 auto 28px;
+      font-size: 36px;
+      font-weight: normal;
+      line-height: 38px;
+    }
+    & h3 {
+
+      margin: 0 auto 28px;
+      font-size: 26px;
+      font-weight: normal;
+      line-height: 30px;
+    }
+    & pre {
+
+      background-color: #f6f7f9;
+      margin: 40px auto;
+      padding: 16px;
+      & span {
+
+        font-family: Menlo, Consolas, Monaco, monospace;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
