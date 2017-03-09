@@ -1,0 +1,25 @@
+{namespace zz.home.templates.tutorial}
+
+/**
+ * Tutorial model template.
+ * @param key
+ * @param value
+ */
+{template .model}
+    <div>
+        <div
+            class="{css demo-card-wide} {css mdl-card} {css mdl-shadow--2dp} {css tutorial}"
+            data-class="{$key.isDoc}:{css tutorial_document}"
+            data-id={$value.id}>
+            {if $value.title}
+                <div
+                    class="{css tutorial--title}">
+                    {$value.title}
+                </div>
+            {/if}
+            <div
+                class="{css tutorial--message}">
+            </div>
+        </div>
+    </div>
+{/template}

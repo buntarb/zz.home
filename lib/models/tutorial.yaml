@@ -1,4 +1,4 @@
-NAMESPACE: 'zz.home.models.Posts'
+NAMESPACE: 'zz.home.models.Tutorial'
 
 FIELDS:
 
@@ -26,14 +26,8 @@ FIELDS:
     type: zz.models.enums.FieldType.STRING
     required: false
 
-  video:
+  step:
 
     index: 4
     type: zz.models.enums.FieldType.STRING
-    required: false
-
-  isDoc:
-
-    index: 5
-    type: zz.models.enums.FieldType.BOOLEAN
     required: false

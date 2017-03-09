@@ -1,6 +1,6 @@
-div.post {
+div.tutorial {
 
-  & div.post--title {
+  & div.tutorial--title {
 
     font-weight: 200;
     line-height: 48px;
@@ -8,7 +8,7 @@ div.post {
     position: relative;
     word-wrap: break-word;
   }
-  & div.post--message{
+  & div.tutorial--message{
 
     & h2 {
 
