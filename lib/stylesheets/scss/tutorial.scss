@@ -1,5 +1,8 @@
 div.tutorial {
 
+  margin: 10px auto;
+  padding: 40px;
+  width: calc( 100% - 100px );
   & div.tutorial--title {
 
     font-weight: 200;
