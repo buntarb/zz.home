@@ -1,43 +1,55 @@
 div.tutorial {
 
+  position: relative;
   margin: 10px auto;
-  padding: 40px;
   width: calc( 100% - 100px );
-  & div.tutorial--title {
+  box-sizing: border-box;
+  & div.tutorial--text {
 
-    font-weight: 200;
-    line-height: 48px;
-    margin: 0 auto 12px;
-    position: relative;
-    word-wrap: break-word;
-  }
-  & div.tutorial--message{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 200px;
+    box-sizing: border-box;
+    & div.tutorial--title {
 
-    & h2 {
-
-      margin: 0 auto 28px;
-      font-size: 36px;
-      font-weight: normal;
-      line-height: 38px;
+      width: 100%;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      font-size: 40px;
+      font-weight: 200;
+      line-height: 48px;
+      word-wrap: break-word;
     }
-    & h3 {
+    & div.tutorial--message{
 
-      margin: 0 auto 28px;
-      font-size: 26px;
-      font-weight: normal;
-      line-height: 30px;
-    }
-    & pre {
+      width: 100%;
+      box-sizing: border-box;
+      & h2 {
 
-      background-color: #f6f7f9;
-      margin: 40px auto;
-      padding: 16px;
-      & span {
+        margin: 0 auto 28px;
+        font-size: 36px;
+        font-weight: normal;
+        line-height: 38px;
+      }
+      & h3 {
 
-        display: block;
-        font-family: Menlo, Consolas, Monaco, monospace;
-        font-size: 14px;
-        line-height: 20px;
+        margin: 0 auto 28px;
+        font-size: 26px;
+        font-weight: normal;
+        line-height: 30px;
+      }
+      & pre {
+
+        background-color: #f6f7f9;
+        margin: 20px auto;
+        padding: 16px;
+        & span {
+
+          display: block;
+          font-family: Menlo, Consolas, Monaco, monospace;
+          font-size: 14px;
+          line-height: 20px;
+        }
       }
     }
   }

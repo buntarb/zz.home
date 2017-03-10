@@ -9,16 +9,24 @@
     <div>
         <div
             class="{css mdl-card} {css mdl-shadow--2dp} {css tutorial}"
-            data-class="{$key.isDoc}:{css tutorial_document}"
-            data-id={$value.id}>
-            {if $value.title}
+            data-class="{$key.isDoc}:{css tutorial_document}">
+            {if $value.image}
                 <div
-                    class="{css tutorial--title}">
-                    {$value.title}
+                    class="{css tutorial--image}"
+                    style="backgtound-image: {$value.image}">
                 </div>
             {/if}
             <div
-                class="{css tutorial--message}">
+                class="{css tutorial--text}">
+                {if $value.title}
+                    <div
+                        class="{css tutorial--title}">
+                        {$value.title}
+                    </div>
+                {/if}
+                <div
+                    class="{css tutorial--message}">
+                </div>
             </div>
         </div>
     </div>
