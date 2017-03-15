@@ -1,7 +1,7 @@
 NAMESPACE: 'zz.home.models.FBServerApi'
 
 REQUIRE:
-  - 'zz.home.models.Posts'
+  - 'zz.home.models.Tutorial'
 
 FIELDS:
 
@@ -20,5 +20,5 @@ FIELDS:
   content:
 
     index: 2
-    type: zz.home.models.Posts
+    type: zz.home.models.Tutorial
     required: false

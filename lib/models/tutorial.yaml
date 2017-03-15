@@ -1,5 +1,8 @@
 NAMESPACE: 'zz.home.models.Tutorial'
 
+REQUIRE:
+    - 'zz.home.models.Images'
+
 FIELDS:
 
   id:
@@ -20,10 +23,10 @@ FIELDS:
     type: zz.models.enums.FieldType.STRING
     required: false
 
-  image:
+  images:
 
     index: 3
-    type: zz.models.enums.FieldType.STRING
+    type: zz.home.models.Images
     required: false
 
   step:

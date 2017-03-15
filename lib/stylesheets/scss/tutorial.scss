@@ -1,16 +1,16 @@
-div.tutorial {
+div.tutorial-doc {
 
   position: relative;
   margin: 10px auto;
   width: calc( 100% - 100px );
   box-sizing: border-box;
-  & div.tutorial--text {
+  & div.tutorial-doc--text {
 
     width: 100%;
     margin: 0 auto;
     padding: 20px 200px;
     box-sizing: border-box;
-    & div.tutorial--title {
+    & div.tutorial-doc--title {
 
       width: 100%;
       margin-bottom: 20px;
@@ -20,7 +20,7 @@ div.tutorial {
       line-height: 48px;
       word-wrap: break-word;
     }
-    & div.tutorial--message{
+    & div.tutorial-doc--message{
 
       width: 100%;
       box-sizing: border-box;
@@ -50,6 +50,11 @@ div.tutorial {
           font-size: 14px;
           line-height: 20px;
         }
+      }
+      & img {
+
+        max-width: 100%;
+        height: auto;
       }
     }
   }

@@ -2,30 +2,28 @@
 
 /**
  * Tutorial model template.
- * @param key
  * @param value
  */
 {template .model}
     <div>
         <div
-            class="{css mdl-card} {css mdl-shadow--2dp} {css tutorial}"
-            data-class="{$key.isDoc}:{css tutorial_document}">
+            class="{css mdl-card} {css mdl-shadow--2dp} {css tutorial-doc}">
             {if $value.image}
                 <div
-                    class="{css tutorial--image}"
+                    class="{css tutorial-doc--image}"
                     style="backgtound-image: {$value.image}">
                 </div>
             {/if}
             <div
-                class="{css tutorial--text}">
+                class="{css tutorial-doc--text}">
                 {if $value.title}
                     <div
-                        class="{css tutorial--title}">
+                        class="{css tutorial-doc--title}">
                         {$value.title}
                     </div>
                 {/if}
                 <div
-                    class="{css tutorial--message}">
+                    class="{css tutorial-doc--message}">
                 </div>
             </div>
         </div>
