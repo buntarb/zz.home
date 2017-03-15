@@ -31,6 +31,18 @@ FIELDS:
 
   step:
 
-    index: 4
-    type: zz.models.enums.FieldType.STRING
-    required: false
+      index: 4
+      type: zz.models.enums.FieldType.STRING
+      required: false
+
+  author:
+
+      index: 5
+      type: zz.models.enums.FieldType.STRING
+      required: false
+
+  createdTime:
+
+      index: 6
+      type: zz.models.enums.FieldType.STRING
+      required: false

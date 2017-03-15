@@ -4,6 +4,7 @@ div.tutorial-doc {
   margin: 10px auto;
   width: calc( 100% - 100px );
   box-sizing: border-box;
+  font-family: 'Open Sans';
   & div.tutorial-doc--text {
 
     width: 100%;
@@ -19,6 +20,20 @@ div.tutorial-doc {
       font-weight: 200;
       line-height: 48px;
       word-wrap: break-word;
+    }
+    & div.tutorial-doc--info {
+
+      display: flex;
+      color: #90949c;
+      text-transform: uppercase;
+      & div.tutorial-doc--author {
+
+          margin-right: 10px;
+      }
+      & div.tutorial-doc--time {
+
+
+      }
     }
     & div.tutorial-doc--message{
 
