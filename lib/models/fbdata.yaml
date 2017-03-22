@@ -1,4 +1,4 @@
-NAMESPACE: 'zz.home.models.FBServerApi'
+NAMESPACE: 'zz.home.models.FBData'
 
 REQUIRE:
   - 'zz.home.models.Tutorial'
