@@ -1,0 +1,19 @@
+{
+	"name": "zz.home",
+	"version": "20170413.0.0",
+	"description": "zz.home project",
+	"author": {
+		"name": "Lytvynov Artem",
+		"email": "buntarb@gmail.com"
+	},
+	"license": "Apache-2.0",
+    "homepage": "http://www.example.com",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/buntarb/zz.home.git"
+	},
+	"dependencies": {
+
+	    "imazzine-developer-kit": ""
+	}
+}
