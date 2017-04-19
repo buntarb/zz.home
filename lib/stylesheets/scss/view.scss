@@ -1,3 +1,5 @@
+@import "constants";
+
 .golden-block {
     
     display: block;
@@ -88,6 +90,50 @@
                         color: #4c4c4c;
                     }
                 }
+            }
+        }
+        & div.about-idk {
+
+            border-radius: 0px;
+            &#id1 {
+
+                background: $google-blue0;
+            }
+            &#id2 {
+
+                background: $google-yellow0;
+            }
+            &#id3 {
+
+                background: $google-green1;
+            }
+            &#id4 {
+
+                background: $google-red3;
+            }
+            &#id5 {
+
+                background: $google-grey3;
+            }
+            &#id6 {
+
+                background: $google-yellow3;
+            }
+            &#id7 {
+
+                background: $google-red1;
+            }
+            &#id8 {
+
+                background: $google-green8;
+            }
+            &#id9 {
+
+                background: $google-cyan1;
+            }
+            &#id10 {
+
+                background: $google-orange2;
             }
         }
     }
