@@ -40,6 +40,8 @@
     & div.item {
         
         display: inline-block;
+        box-sizing: border-box;
+        padding: 5px;
         & div.model {
             
             width: 100%;
@@ -94,7 +96,13 @@
         }
         & div.about-idk {
 
-            border-radius: 0px;
+            border-radius: 2px;
+            border: 1px solid #ddd;
+            box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+            &:not(#idslogan){
+
+              padding: 10px;
+            }
             &#id1 {
 
                 background: $google-blue0;

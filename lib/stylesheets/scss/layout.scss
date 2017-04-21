@@ -1,31 +1,3 @@
-@media screen and (max-width: 1024px){
-    
-    .mdl-layout__header-row {
-        
-        .mdl-layout__drawer-button {
-                            
-            margin: 11px 9px 11px 28px;
-        }
-        .mdl-layout-title {
-                            
-            margin: 8px 9px 8px;
-        }
-    }
-}
-@media screen and (min-width: 1025px){
-    
-    .mdl-layout__header-row {
-        
-        .mdl-layout__drawer-button {
-                            
-            margin: 15px 10px 15px 28px;
-        }
-        .mdl-layout-title {
-                            
-            margin: 13px 9px 13px;
-        }
-    }
-}
 
 
 div.dataset.zz-home-layout {
@@ -36,6 +8,7 @@ div.dataset.zz-home-layout {
     height: 100%;
     top: 0;
     left: 0;
+    background: rgba(0,0,0,0.02);
     & > div.datarow {
         
         display: block;
@@ -56,24 +29,29 @@ div.dataset.zz-home-layout {
             div.mdl-layout {
                 
                 .mdl-layout__header {
-                    
+
+                    height: 56px;
+                    min-height: 56px;
                     background-color: #fff;
                     .mdl-layout__header-row {
-                        
+
+                        height: 56px;
                         padding-left: 71px;
                         .mdl-layout__drawer-button {
-                            
+
                             width: 34px;
                             height: 34px;
+                            margin: 11px 9px 11px 28px;
                             background: url(/lib/resources/images/logo.png) no-repeat;
                             background-size: 100%;
                             outline: none;
                         }
                         .mdl-layout-title {
-                            
+
+                            margin: 8px 9px 8px;
+                            height: 32px;
+                            line-height: 32px;
                             font-family: 'Open Sans Light';
-                            height: 40px;
-                            line-height: 40px;
                             color: #4c4c4c;
                             font-size: 24px;
                         }
@@ -88,29 +66,26 @@ div.dataset.zz-home-layout {
                         transform: translateX(0);
                     }
                     .mdl-layout-title {
-                        
+
+                        display: flex;
+                        align-items: center;
                         outline: none;
-                        width: 234px;
-                        height: 40px;
-                        margin: 13px;
+                        height: 56px;
                         padding: 0;
+                        line-height: 1;
                         .logo {
-                            
-                            display: inline-block;
-                            float: left;
+
                             width: 34px;
                             height: 34px;
-                            margin: 3px;
+                            margin: 0 9px 0 28px;
                             background: url(/lib/resources/images/logo.png) no-repeat;
                             background-size: 100%;
+                            outline: none;
                         }
                         .title {
-                            
-                            display: inline-block;
+
                             position: relative;
-                            float: left;
                             width: 194px;
-                            height: 40px;
                             line-height: 10px;
                             font-size: 9px;
                             color: rgb(120, 120, 120);
@@ -121,7 +96,7 @@ div.dataset.zz-home-layout {
                                 padding-left: 16px;
                                 color: #4c4c4c;
                                 font-size: 24px;
-                                line-height: 40px;
+                                line-height: 56px;
                             }
                         }
                     }
