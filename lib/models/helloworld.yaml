@@ -1,9 +1,0 @@
-NAMESPACE: 'zz.home.models.HelloWorld'
-
-FIELDS:
-
-  text:
-
-    index: 0
-    type: zz.models.enums.FieldType.STRING
-    required: false
