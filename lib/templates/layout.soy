@@ -30,12 +30,7 @@
  */
 {template .model}
     <div
-        class="
-            {css model}
-            {if $value.cssClass.length}
-                {sp}{$value.cssClass}
-            {/if}"
-        data-class="{$key.disable}:{css disable}">
+        class="{css model}">
         
         // Material design layout
         <div
@@ -61,12 +56,6 @@
                     // Add spacer, to align navigation to the right
                     <div
                         class="{css mdl-layout-spacer}">
-                    </div>
-                    // Navigation
-                    <div
-                        data-model="{$key.navigation}"
-                        data-view="zz-home-navigation-list"
-                        data-controller="zz-ui-list">
                     </div>
                 </div>
             </header>
@@ -97,7 +86,7 @@
                 </div>
             </div>
             // View
-            <main
+            <maina
                 class="{css mdl-layout__content}">
                 <div
                     id="{css view-wrapper}"
